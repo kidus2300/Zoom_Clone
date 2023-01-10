@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const express = require("express");
 const app = express();
 // const cors = require('cors')
@@ -9,6 +10,12 @@ const peerServer = ExpressPeerServer(server, {
   debug: true,
 });
 const { v4: uuidV4 } = require("uuid");
+=======
+
+const express = require("express")
+const app = express()
+const server = require('http').Server(app)
+>>>>>>> b13f76d8a1f2194a453a1ec46d752ad4101c0a5b
 
 app.use("/peerjs", peerServer);
 
